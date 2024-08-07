@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang = "en">
+
+    <meta charset="utf-8">
+    <title>Find a Dog/Cat</title>
+
+<body>
+    <div id="header"></div>
+    <div class="content-with-menu">
+        <div id="side-menu-placeholder"></div>
+        <main class="content">
+            <form id="FormFind" onsubmit="submitFind(event)">
+                <h2>Pets available for adoption</h2><br>
+                <fieldset id="fieldFind"><legend><i>Please answer the following questions below</i></legend>
+                    <label><b>Cat or dog: </b></label>
+                        <input type="radio" id="cat" name="cat/dog" value="cat">Cat
+                        <input type="radio" id="dog" name="cat/dog" value="dog">Dog<br><br>
+                    <label><b>Breed of dog or cat: </b></label>
+                        <input type="radio" id="breed-of-cat" name="breed" value="breed-of-cat">Cat
+                        <input type="radio" id="breed-of-dog" name="breed" value="breed-of-dog">Dog
+                        <input type="radio" id="none-breed" name="breed" value="none-breed">Doesn't matter<br><br>
+                    <label><b>Preferred age of animal: </b></label>
+                        <select id="age" name="age">
+                            <option value="less-than-5">Less than 5</option>
+                            <option value="5-9">5-9</option>
+                            <option value="10-14">10-14</option>
+                            <option value="15-19">15-19</option>
+                            <option value="20-24">20-24</option>
+                            <option value=">24">Above 24</option>
+                            <option value="none">Doesn't matter</option>
+                        </select><br><br>
+                    <label><b>Preferred gender: </b></label>
+                        <input type="radio" id="female" name="gender" value="female">Female 
+                        <input type="radio" id="male" name="gender" value="male">Male
+                        <input type="radio" id="none-gender" name="gender" value="none-gender">Doesn't matter<br><br>
+                    <label><b>It needs to get along with: </b></label>
+                        <input type="radio" id="other-dogs" name="get-along1" value="other-dogs">other dogs 
+                        <input type="radio" id="other-cats" name="get-along1" value="other-cats">other cats
+                        <input type="radio" id="small-children" name="get-along1" value="small-children">small children
+                </fieldset> <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form><br><br>
+
+            <div id="resultContent" class="hidden"></div>
+        </main>
+    </div>
+    <div id="footer"></div>
+
+
+    
+</body>
+
+</html>

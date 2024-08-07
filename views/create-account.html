@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="utf-8">
+    <title>Create an Account</title>
+
+
+<body>
+    <div id="header"></div>
+    <div class="content-with-menu">
+        <div id="side-menu-placeholder"></div>
+        <main class="content">
+            <h2>Create an Account</h2>
+            <form id="FormCreateAccount" onsubmit="submitCreateAccount(event)">
+                <fieldset id="fieldCreateAccount">
+                    <legend><i>Please enter the following details to create an account</i></legend>
+                    <label><b>Username: </b></label>
+                    <input type="text" id="username" name="username" required>
+                    <p>Username can contain letters (both upper and lower case) and digits only.</p><br>
+                    <label><b>Password: </b></label>
+                    <input type="password" id="password" name="password" required>
+                    <p>Password must be at least 4 characters long, have at least one letter and at least one digit.</p><br>
+                    <input type="submit" value="Create Account">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+            <div id="createAccountMessage"></div>
+        </main>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

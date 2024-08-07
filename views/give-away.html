@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="utf-8">
+    <title>Have a Pet to Give Away</title>
+
+<body>
+    <div id="header"></div>
+    <div class="content-with-menu">
+        <div id="side-menu-placeholder"></div>
+        <main class="content">
+            <!-- Login Form -->
+            <div id="loginForm" class="form-container">
+                <h2>Login</h2>
+                <form id="FormLogin" onsubmit="submitLogin(event)">
+                    <label for="username"><b>Username:</b></label>
+                    <input type="text" id="username" name="username" required><br><br>
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <input type="submit" value="Login">
+                </form>
+                <div id="loginError" class="error"></div>
+            </div>
+
+            <!-- Pet Submission Form -->
+            <div id="petForm" class="form-container hidden">
+                <h2>Have a Pet to Give Away</h2><br>
+                <form id="FormGiveAway" onsubmit="submitGiveAway(event)">
+                    <fieldset id="fieldGiveAway"><legend><i>Please answer the following questions below</i></legend>
+                        <label><b>Cat or dog: </b></label>
+                            <input type="radio" id="cat" name="cat/dog" value="cat">Cat
+                            <input type="radio" id="dog" name="cat/dog" value="dog">Dog<br><br>
+                        <label><b>Breed of dog or cat: </b></label>
+                            <input type="radio" id="breed-of-cat" name="breed" value="breed-of-cat">Cat
+                            <input type="radio" id="breed-of-dog" name="breed" value="breed-of-dog">Dog
+                            <input type="radio" id="mix" name="breed" value="mix">Mix<br><br>
+                        <label><b>Age of animal: </b></label>
+                            <select id="age" name="age">
+                                <option value="less-than-5">Less than 5</option>
+                                <option value="5-9">5-9</option>
+                                <option value="10-14">10-14</option>
+                                <option value="15-19">15-19</option>
+                                <option value="20-24">20-24</option>
+                                <option value=">24">Above 24</option>
+                            </select><br><br>
+                        <label><b>Animal gender: </b></label>
+                            <input type="radio" id="female" name="gender" value="female">Female 
+                            <input type="radio" id="male" name="gender" value="male">Male<br><br>
+                        <label><b>Gets along with: </b></label>
+                            <input type="checkbox" id="other-dogs" name="get-along1" value="other-dogs">other dogs 
+                            <input type="checkbox" id="other-cats" name="get-along1" value="other-cats">other cats<br><br>
+                        <label><b>Suitable for a family with small children: </b></label>
+                            <input type="radio" id="suitable" name="get-along2" value="suitable">Yes 
+                            <input type="radio" id="not-suitable" name="get-along2" value="not-suitable">No<br><br>
+                        <label><b>Brag about the animal that you're putting up for adoption: </b></label>
+                            <input type="text" id="brag" name="brag"><br><br>
+                        <label><b>The current owner's first and last name: </b></label>
+                            <input type="text" id="name" name="name"><br><br>
+                        <label><b>The current owner's email: </b></label>
+                            <input type="text" id="email" name="email">
+                    </fieldset> <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                    <div class="error" id="error-message"></div>
+                </form><br><br>
+            </div>
+        </main>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
